@@ -49,11 +49,11 @@ def valid_proof(last_hash, proof):
 
 if __name__ == '__main__':
     # What node are we interacting with?
-    # if len(sys.argv) > 1:
-    #     node = sys.argv[1]
-    # else:
-    #     node = "https://lambda-coin.herokuapp.com/api"
-    node = "https://lambda-coin-test-1.herokuapp.com/api"
+    if len(sys.argv) > 1:
+        node = sys.argv[1]
+    else:
+        node = "https://lambda-coin.herokuapp.com/api"
+    # node = "https://lambda-coin-test-1.herokuapp.com/api"
 
     coins_mined = 0
 
